@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dictados Armónicos</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .dictado { margin-bottom: 40px; }
+    .feedback { margin-top: 10px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Dictados Armónicos</h1>
+
+  <div class="dictado">
+    <h2>Dictado 1</h2>
+    <audio controls>
+      <source src="https://raw.githubusercontent.com/juliandavin13/dictadosag/main/D1%20audio.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <button onclick="mostrarProgresion(1)">Ver progresión</button>
+    <div class="feedback" id="feedback1"></div>
+  </div>
+
+  <div class="dictado">
+    <h2>Dictado 2</h2>
+    <audio controls>
+      <source src="AUDIO_URL_2" type="audio/mp3">
+    </audio>
+    <br>
+    <button onclick="mostrarProgresion(2)">Ver progresión</button>
+    <div class="feedback" id="feedback2"></div>
+  </div>
+
+  <script>
+    const progresiones = {
+      1: ["C", "G", "Am", "F"],
+      2: ["Dm", "G", "C", "A7"]
+    };
+
+    function mostrarProgresion(num) {
+      const feedback = document.getElementById("feedback" + num);
+      feedback.textContent = "Progresión: " + progresiones[num].join(", ");
+    }
+  </script>
+</body>
+</html>
