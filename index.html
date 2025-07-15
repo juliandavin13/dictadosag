@@ -20,6 +20,7 @@
     </audio>
     <br>
     <button onclick="mostrarProgresion(1)">Ver progresión</button>
+    <button onclick="ocultarProgresion(1)">Ocultar progresión</button>
     <div class="feedback" id="feedback1"></div>
   </div>
 
@@ -31,20 +32,24 @@
     </audio>
     <br>
     <button onclick="mostrarProgresion(2)">Ver progresión</button>
+    <button onclick="ocultarProgresion(2)">Ocultar progresión</button>
     <div class="feedback" id="feedback2"></div>
   </div>
 
-  <!-- Puedes duplicar bloques como estos para D3, D4, D5, etc. -->
-
   <script>
     const progresiones = {
-      1: [" MM I IV I IV VIm7 IV VIm7 IV IIm7 V7 I "],
+      1: ["C", "G", "Am", "F"],
       2: ["Dm", "G", "C", "A7"]
     };
 
     function mostrarProgresion(num) {
       const feedback = document.getElementById('feedback' + num);
       feedback.textContent = 'Progresión: ' + progresiones[num].join(', ');
+    }
+
+    function ocultarProgresion(num) {
+      const feedback = document.getElementById('feedback' + num);
+      feedback.textContent = '';
     }
   </script>
 </body>
