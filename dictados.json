@@ -46,5 +46,24 @@
   "titulo": "Dictado D8",
   "audio": "https://www.dropbox.com/scl/fi/d427lmsr6hzismj095qa5/D8-P-Im7-Vm7-IVm7-IIm7b5-V7.mp3?rlkey=w90pyz291nr5dxdp4ayy4zc12&st=fv63hkc6&raw=1",
   "progresion": ["Mm Im7 Vm7 IVm7 IIm7b5 V7"]
+  },
+  {
+  "id": 9,
+  "titulo": "Dictado D9",
+  "audio": "https://www.dropbox.com/scl/fi/y6elco3742nvyd32f6f41/D9-P-Mm-Im7-VImaj7-Im7-VImaj7-IVm7-VII7-Im7.mp3?rlkey=y2kv11hgzbxctss6y9tofdg9l&st=tjv8x2s3&raw=1",
+  "progresion": ["Im7 VImaj7  Im7  VImaj7 IVm7 VII7 Im7"]
+  },
+  {
+  "id": 10,
+  "titulo": "Dictado D10",
+  "audio": "https://www.dropbox.com/scl/fi/eksf845mzrmrpto5lhr9f/D10-P-Mm-Im-IVm-VI-V-Im-IVm-VI-V-VI-VII-Im.mp3?rlkey=7p7kznj9sqrgh1u5cab53u4h3&st=zsfosaxc&raw=1",
+  "progresion": ["Im IVm VI V Im IVm VI V VI VII Im"]
+  },
+  {
+  "id": 11,
+  "titulo": "Dictado D11",
+  "audio": "https://www.dropbox.com/scl/fi/1hyh93690ej0wb0z2n0ou/D11-Mm-Im7-IIdim-IIImaj7-IVm-VImaj7-VIIdim-menor-armonica.mp3?rlkey=1426jnx3hct5rx6n7uhfdklnn&st=f4gn51qz&raw=1",
+  "progresion": ["Im7 IIdim IIImaj7 IVm VImaj7 VIIdim (menor armonica)"]
   }
+  
 ]
