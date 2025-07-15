@@ -10,5 +10,17 @@
     "titulo": "Dictado D2",
     "audio": "https://www.dropbox.com/scl/fi/sg1972sbbxflg1jcp8vbs/D2-P-MM-Imaj7-VIm7-IIm7-IV-V7-Imaj7.mp3?rlkey=s60pp1izgfdvsxz77a9g666lw&st=18859rrw&raw=1",
     "progresion": ["D2 P MM Imaj7 VIm7 IIm7 IV V7"]
-  }
+  },
+  {
+    "id": 3,
+    "titulo": "Dictado D3",
+    "audio": "https://www.dropbox.com/scl/fi/gumevu8ziwy1jn9s47prx/D3-MM-guitarra-triada-I-IIIm-VIm-IIm-V.mp3?rlkey=2lt9z5qfn81t9znqi7wpyou9m&st=0aqnsbnu&raw=1",
+    "progresion": ["I IIIm VIm IIm V"]
+  },
 ]
+
+
+"id": ,
+    "titulo": "Dictado Dx",
+    "audio": "raw=1",
+    "progresion": [" "]
