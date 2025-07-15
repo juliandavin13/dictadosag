@@ -28,5 +28,23 @@
   "titulo": "Dictado D5",
   "audio": "https://www.dropbox.com/scl/fi/p9j8loq8zqqxp3niit2a7/D5-G-MM-I-IIIm7-IIm7-IVmaj7-V.mp3?rlkey=q0denv1964bck9v4q81whupnp&st=cut08lck&raw=1",
   "progresion": ["MM I IIIm7 IIm7 IVmaj7 V"]
+  },
+  {
+  "id": 6,
+  "titulo": "Dictado D6",
+  "audio": "https://www.dropbox.com/scl/fi/z9zt6c5tw81egjcvyu1j8/D6-G-Mm-Im-IIdim-V-Im-IVm-VII-III-V-Im.mp3?rlkey=sjukg891buv16asgka2uksuuv&st=fel8dmpo&raw=1",
+  "progresion": ["Mm Im IIdim V Im IVm VII III V Im"]
+  },
+  {
+  "id": 7,
+  "titulo": "Dictado D7",
+  "audio": "https://www.dropbox.com/scl/fi/f874gblep3vs83yk33ekz/D7-P-Mm-Im-VII-VI-IIm7b5-V7-Im.mp3?rlkey=lp5zzaz86c0x125k6ki4e7qhs&st=9yg9ra0l&raw=1",
+  "progresion": ["Mm Im VII VI IIm7b5 V7 Im"]
+  },
+  {
+  "id": 8,
+  "titulo": "Dictado D8",
+  "audio": "https://www.dropbox.com/scl/fi/d427lmsr6hzismj095qa5/D8-P-Im7-Vm7-IVm7-IIm7b5-V7.mp3?rlkey=w90pyz291nr5dxdp4ayy4zc12&st=fv63hkc6&raw=1",
+  "progresion": ["Mm Im7 Vm7 IVm7 IIm7b5 V7"]
   }
 ]
