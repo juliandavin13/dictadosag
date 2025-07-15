@@ -12,35 +12,39 @@
 <body>
   <h1>Dictados Armónicos</h1>
 
+  <!-- Dictado 1 -->
   <div class="dictado">
-    <h2>Dictado 1</h2>
+    <h2>Dictado D1</h2>
     <audio controls>
-      <source src="https://raw.githubusercontent.com/juliandavin13/dictadosag/main/D1%20G%20MM%20I%20IV%20I%20IV%20VIm7%20IV%20VIm7%20IV%20IIm7%20V7%20I%20.mp3" type="audio/mp3">
+      <source src="audio/D1.mp3" type="audio/mp3">
     </audio>
     <br>
     <button onclick="mostrarProgresion(1)">Ver progresión</button>
     <div class="feedback" id="feedback1"></div>
   </div>
 
+  <!-- Dictado 2 -->
   <div class="dictado">
-    <h2>Dictado 2</h2>
+    <h2>Dictado D2</h2>
     <audio controls>
-      <source src="AUDIO_URL_2" type="audio/mp3">
+      <source src="audio/D2.mp3" type="audio/mp3">
     </audio>
     <br>
     <button onclick="mostrarProgresion(2)">Ver progresión</button>
     <div class="feedback" id="feedback2"></div>
   </div>
 
+  <!-- Puedes duplicar bloques como estos para D3, D4, D5, etc. -->
+
   <script>
     const progresiones = {
-      1: ["MM I IV I IV VIm7 IV VIm7 IV IIm7 V7 I"],
-      2: ["colocar aqui progresion correspondiente"]
+      1: ["C", "G", "Am", "F"],
+      2: ["Dm", "G", "C", "A7"]
     };
 
     function mostrarProgresion(num) {
-      const feedback = document.getElementById("feedback" + num);
-      feedback.textContent = "Progresión: " + progresiones[num].join(", ");
+      const feedback = document.getElementById('feedback' + num);
+      feedback.textContent = 'Progresión: ' + progresiones[num].join(', ');
     }
   </script>
 </body>
