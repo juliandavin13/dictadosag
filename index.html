@@ -1,36 +1,76 @@
-<body>
-  <h1>Dictados Armónicos</h1>
-  <div id="contenedor"></div>
+<body style="font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 0;">
+  <h1 style="text-align:center; margin-top:20px;">Dictados Armónicos Armonia General</h1>
+  
+  <div id="contenedor" 
+       style="display:flex; justify-content:center; align-items:center; min-height:60vh;">
+  </div>
+
+  <div style="text-align:center; margin-top:20px;">
+    <button id="anterior" style="padding:10px 20px; font-size:16px;">◀ Anterior</button>
+    <button id="siguiente" style="padding:10px 20px; font-size:16px;">Siguiente ▶</button>
+  </div>
+
+  <p id="contador" style="text-align:center; margin-top:10px; font-style:italic;"></p>
 
   <script>
+    let indice = 0;
+    let data = [];
+
     fetch('dictados.json')
       .then(response => response.json())
-      .then(data => {
-        const contenedor = document.getElementById('contenedor');
-        data.forEach(dictado => {
-          const div = document.createElement('div');
-          div.className = 'dictado';
-          div.innerHTML = `
-            <h2>${dictado.titulo}</h2>
-            <audio controls>
-              <source src="${dictado.audio}" type="audio/mp3">
-            </audio><br>
-            <button onclick="mostrarProgresion(${dictado.id})">Ver progresión</button>
-            <button onclick="ocultarProgresion(${dictado.id})">Ocultar progresión</button>
-            <div class="feedback" id="feedback${dictado.id}"></div>
-          `;
-          contenedor.appendChild(div);
-        });
-
-        window.mostrarProgresion = function(id) {
-          const dictado = data.find(d => d.id === id);
-          document.getElementById('feedback' + id).textContent =
-            'Progresión: ' + dictado.progresion.join(', ');
-        };
-
-        window.ocultarProgresion = function(id) {
-          document.getElementById('feedback' + id).textContent = '';
-        };
+      .then(json => {
+        data = json;
+        mostrarDictado(indice);
       });
+
+    function mostrarDictado(i) {
+      const contenedor = document.getElementById('contenedor');
+      contenedor.innerHTML = ''; // limpiar
+
+      const dictado = data[i];
+      const div = document.createElement('div');
+      div.className = 'dictado';
+      div.style.width = '80%';
+      div.style.maxWidth = '500px';
+      div.style.padding = '20px';
+      div.style.background = 'white';
+      div.style.borderRadius = '12px';
+      div.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+      div.style.textAlign = 'center';
+
+      div.innerHTML = `
+        <h2 style="margin-bottom:15px;">${dictado.titulo}</h2>
+        <audio controls style="width:100%; margin-bottom:15px;">
+          <source src="${dictado.audio}" type="audio/mp3">
+        </audio><br>
+        <button onclick="mostrarProgresion(${dictado.id})" style="margin:5px; padding:8px 16px;">Ver progresión</button>
+        <button onclick="ocultarProgresion(${dictado.id})" style="margin:5px; padding:8px 16px;">Ocultar progresión</button>
+        <div class="feedback" id="feedback${dictado.id}" style="margin-top:10px; font-weight:bold;"></div>
+      `;
+      contenedor.appendChild(div);
+
+      document.getElementById('contador').textContent =
+        `${i + 1} / ${data.length}`;
+    }
+
+    function mostrarProgresion(id) {
+      const dictado = data.find(d => d.id === id);
+      document.getElementById('feedback' + id).textContent =
+        'Progresión: ' + dictado.progresion.join(', ');
+    }
+
+    function ocultarProgresion(id) {
+      document.getElementById('feedback' + id).textContent = '';
+    }
+
+    document.getElementById('anterior').addEventListener('click', () => {
+      indice = (indice === 0) ? data.length - 1 : indice - 1;
+      mostrarDictado(indice);
+    });
+
+    document.getElementById('siguiente').addEventListener('click', () => {
+      indice = (indice === data.length - 1) ? 0 : indice + 1;
+      mostrarDictado(indice);
+    });
   </script>
 </body>
