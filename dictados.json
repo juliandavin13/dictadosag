@@ -70,6 +70,12 @@
   "titulo": "Dictado D12",
   "audio": "https://www.dropbox.com/scl/fi/2w7o8esw6bsk0b5bloatv/D12-MM-I-IIIm7-IIm7-IVmaj7-V-I.mp3?rlkey=z0r2nl5tre5285ugfe74z5lpq&st=mcio1jpf&raw=1",
   "progresion": ["D12-MM-I-IIIm7-IIm7-IVmaj7-V-I"]
+},
+{
+  "id": 13,
+  "titulo": "Dictado D13",
+  "audio": "https://www.dropbox.com/scl/fi/cn2d7l9ff7icfd1bpzk8a/D13-Mm-Im7-IIImaj7-Im7-VImaj7-Vm-IVm7.mp3?rlkey=4zfh1qevt8tvwwx3h8zi62sv5&st=9l9py4gj&raw=1",
+  "progresion": ["D13-Mm-Im7-IIImaj7-Im7-VImaj7-Vm-IVm7"]
 }
   
 ]
