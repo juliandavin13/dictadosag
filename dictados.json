@@ -82,5 +82,11 @@
   "titulo": "Dictado D14",
   "audio": "https://www.dropbox.com/scl/fi/5xm78al8s2jgt7vg2uhu8/D14-MM-Imaj7-IVmaj7-Imaj7-IVmaj7-V-Vim.mp3?rlkey=o1lm8ic5ckyapk8wnpwk07q50&st=wf47n0x6&raw=1",
   "progresion": ["D14-MM-Imaj7-IVmaj7-Imaj7-IVmaj7-V-Vim"]
-}  
+},
+{
+  "id": 15,
+  "titulo": "Dictado D15",
+  "audio": "https://www.dropbox.com/scl/fi/4dq85lnntf9996czb6tjz/D15-Mm-Im7-IIm7b5-V7-Im7-IVm7-VII7-IIImaj7-V7-Im7.mp3?rlkey=1dwcjdnwmp2zjt0rw50bqpdgt&st=t4v4wtpr&raw=1",
+  "progresion": ["D15-Mm-Im7-IIm7b5-V7-Im7-IVm7-VII7-IIImaj7-V7-Im7"]
+}
 ]
