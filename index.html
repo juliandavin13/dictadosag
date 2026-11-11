@@ -1,76 +1,273 @@
-<body style="font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 0;">
-  <h1 style="text-align:center; margin-top:20px;">Dictados Armónicos Armonia General</h1>
-  
-  <div id="contenedor" 
-       style="display:flex; justify-content:center; align-items:center; min-height:60vh;">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictados Armónicos - Armonía General</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-top: 20px;
+      margin-bottom: 25px;
+      color: #1e293b;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    /* Pestañas de Filtrado */
+    .filter-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 25px;
+      background: #e2e8f0;
+      padding: 5px;
+      border-radius: 30px;
+    }
+
+    .tab-btn {
+      border: none;
+      background: transparent;
+      padding: 8px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #475569;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn.active {
+      background: #2563eb;
+      color: white;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+    }
+
+    /* Contenedor Principal */
+    #contenedor {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Tarjeta del Dictado */
+    .dictado-card {
+      width: 100%;
+      background: white;
+      padding: 30px 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .dictado-card h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #0f172a;
+      font-size: 1.4rem;
+    }
+
+    audio {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    /* Botones de Progresión */
+    .action-btn {
+      padding: 10px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 4px;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .action-btn:active {
+      transform: scale(0.97);
+    }
+
+    .btn-show {
+      background-color: #10b981;
+      color: white;
+    }
+    .btn-show:hover { background-color: #059669; }
+
+    .btn-hide {
+      background-color: #94a3b8;
+      color: white;
+    }
+    .btn-hide:hover { background-color: #64748b; }
+
+    /* Caja de Feedback/Progresión */
+    .feedback {
+      margin-top: 20px;
+      padding: 12px;
+      border-radius: 8px;
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      font-weight: 600;
+      color: #1e293b;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Navegación Anterior/Siguiente */
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .nav-btn {
+      background: #1e293b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background: #334155;
+    }
+
+    #contador {
+      font-size: 14px;
+      color: #64748b;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Dictados Armónicos - Armonía General</h1>
+
+  <!-- Pestañas de Filtro -->
+  <div class="filter-tabs">
+    <button class="tab-btn active" onclick="filtrarModo('todos', this)">Todos</button>
+    <button class="tab-btn" onclick="filtrarModo('mayor', this)">Mayores</button>
+    <button class="tab-btn" onclick="filtrarModo('menor', this)">Menores</button>
   </div>
 
-  <div style="text-align:center; margin-top:20px;">
-    <button id="anterior" style="padding:10px 20px; font-size:16px;">◀ Anterior</button>
-    <button id="siguiente" style="padding:10px 20px; font-size:16px;">Siguiente ▶</button>
-  </div>
+  <!-- Contenedor del Dictado Actual -->
+  <div id="contenedor"></div>
 
-  <p id="contador" style="text-align:center; margin-top:10px; font-style:italic;"></p>
+  <!-- Controles de Navegación -->
+  <div class="nav-controls">
+    <button class="nav-btn" id="anterior">◀ Anterior</button>
+    <span id="contador">0 / 0</span>
+    <button class="nav-btn" id="siguiente">Siguiente ▶</button>
+  </div>
 
   <script>
+    let todosLosDictados = [];
+    let dictadosFiltrados = [];
     let indice = 0;
-    let data = [];
 
     fetch('dictados.json')
       .then(response => response.json())
       .then(json => {
-        data = json;
+        todosLosDictados = json;
+        dictadosFiltrados = [...todosLosDictados];
         mostrarDictado(indice);
       });
 
+    function filtrarModo(modo, elem) {
+      // Actualizar estilo activo de las pestañas
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      elem.classList.add('active');
+
+      // Filtrar la lista según el modo seleccionado en la progresión
+      if (modo === 'todos') {
+        dictadosFiltrados = [...todosLosDictados];
+      } else if (modo === 'mayor') {
+        dictadosFiltrados = todosLosDictados.filter(d => 
+          d.progresion.some(p => p.toLowerCase().includes('mayor'))
+        );
+      } else if (modo === 'menor') {
+        dictadosFiltrados = todosLosDictados.filter(d => 
+          d.progresion.some(p => p.toLowerCase().includes('menor'))
+        );
+      }
+
+      indice = 0;
+      mostrarDictado(indice);
+    }
+
     function mostrarDictado(i) {
       const contenedor = document.getElementById('contenedor');
-      contenedor.innerHTML = ''; // limpiar
+      contenedor.innerHTML = '';
 
-      const dictado = data[i];
+      if (dictadosFiltrados.length === 0) {
+        contenedor.innerHTML = '<div class="dictado-card"><p>No hay dictados disponibles para este filtro.</p></div>';
+        document.getElementById('contador').textContent = '0 / 0';
+        return;
+      }
+
+      const dictado = dictadosFiltrados[i];
       const div = document.createElement('div');
-      div.className = 'dictado';
-      div.style.width = '80%';
-      div.style.maxWidth = '500px';
-      div.style.padding = '20px';
-      div.style.background = 'white';
-      div.style.borderRadius = '12px';
-      div.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
-      div.style.textAlign = 'center';
+      div.className = 'dictado-card';
 
       div.innerHTML = `
-        <h2 style="margin-bottom:15px;">${dictado.titulo}</h2>
-        <audio controls style="width:100%; margin-bottom:15px;">
+        <h2>${dictado.titulo}</h2>
+        <audio controls style="width:100%;">
           <source src="${dictado.audio}" type="audio/mp3">
-        </audio><br>
-        <button onclick="mostrarProgresion(${dictado.id})" style="margin:5px; padding:8px 16px;">Ver progresión</button>
-        <button onclick="ocultarProgresion(${dictado.id})" style="margin:5px; padding:8px 16px;">Ocultar progresión</button>
-        <div class="feedback" id="feedback${dictado.id}" style="margin-top:10px; font-weight:bold;"></div>
+          Tu navegador no soporta el reproductor de audio.
+        </audio>
+        <div>
+          <button class="action-btn btn-show" onclick="mostrarProgresion(${dictado.id})">Ver progresión</button>
+          <button class="action-btn btn-hide" onclick="ocultarProgresion(${dictado.id})">Ocultar</button>
+        </div>
+        <div class="feedback" id="feedback${dictado.id}">Presioná "Ver progresión" para la respuesta</div>
       `;
       contenedor.appendChild(div);
 
-      document.getElementById('contador').textContent =
-        `${i + 1} / ${data.length}`;
+      document.getElementById('contador').textContent = `${i + 1} / ${dictadosFiltrados.length}`;
     }
 
     function mostrarProgresion(id) {
-      const dictado = data.find(d => d.id === id);
-      document.getElementById('feedback' + id).textContent =
-        'Progresión: ' + dictado.progresion.join(', ');
+      const dictado = todosLosDictados.find(d => d.id === id);
+      document.getElementById('feedback' + id).textContent = 'Progresión: ' + dictado.progresion.join(', ');
     }
 
     function ocultarProgresion(id) {
-      document.getElementById('feedback' + id).textContent = '';
+      document.getElementById('feedback' + id).textContent = 'Presioná "Ver progresión" para la respuesta';
     }
 
     document.getElementById('anterior').addEventListener('click', () => {
-      indice = (indice === 0) ? data.length - 1 : indice - 1;
+      if (dictadosFiltrados.length === 0) return;
+      indice = (indice === 0) ? dictadosFiltrados.length - 1 : indice - 1;
       mostrarDictado(indice);
     });
 
     document.getElementById('siguiente').addEventListener('click', () => {
-      indice = (indice === data.length - 1) ? 0 : indice + 1;
+      if (dictadosFiltrados.length === 0) return;
+      indice = (indice === dictadosFiltrados.length - 1) ? 0 : indice + 1;
       mostrarDictado(indice);
     });
   </script>
 </body>
+</html>
