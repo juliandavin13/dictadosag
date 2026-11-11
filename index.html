@@ -87,50 +87,43 @@
       border-radius: 8px;
     }
 
-    /* Botones de Progresión */
-    .action-btn {
-      padding: 10px 18px;
+    /* Unico Botón de Progresión (Toggle) */
+    .toggle-btn {
+      padding: 10px 20px;
       font-size: 14px;
       font-weight: 600;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      margin: 4px;
-      transition: background 0.2s ease, transform 0.1s ease;
+      background-color: #10b981;
+      color: white;
+      transition: background-color 0.2s ease, transform 0.1s ease;
     }
 
-    .action-btn:active {
+    .toggle-btn:active {
       transform: scale(0.97);
     }
 
-    .btn-show {
-      background-color: #10b981;
-      color: white;
+    .toggle-btn.oculto {
+      background-color: #64748b;
     }
-    .btn-show:hover { background-color: #059669; }
 
-    .btn-hide {
-      background-color: #94a3b8;
-      color: white;
-    }
-    .btn-hide:hover { background-color: #64748b; }
-
-    /* Caja de Feedback/Progresión */
+    /* Caja de Respuesta */
     .feedback {
       margin-top: 20px;
-      padding: 12px;
+      padding: 14px;
       border-radius: 8px;
       background: #f8fafc;
       border: 1px dashed #cbd5e1;
       font-weight: 600;
       color: #1e293b;
-      min-height: 48px;
+      min-height: 52px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    /* Navegación Anterior/Siguiente */
+    /* Navegación Anterior / Siguiente */
     .nav-controls {
       display: flex;
       align-items: center;
@@ -186,6 +179,7 @@
     let todosLosDictados = [];
     let dictadosFiltrados = [];
     let indice = 0;
+    let progresionVisible = false;
 
     fetch('dictados.json')
       .then(response => response.json())
@@ -196,11 +190,9 @@
       });
 
     function filtrarModo(modo, elem) {
-      // Actualizar estilo activo de las pestañas
       document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
       elem.classList.add('active');
 
-      // Filtrar la lista según el modo seleccionado en la progresión
       if (modo === 'todos') {
         dictadosFiltrados = [...todosLosDictados];
       } else if (modo === 'mayor') {
@@ -214,12 +206,14 @@
       }
 
       indice = 0;
+      progresionVisible = false;
       mostrarDictado(indice);
     }
 
     function mostrarDictado(i) {
       const contenedor = document.getElementById('contenedor');
       contenedor.innerHTML = '';
+      progresionVisible = false;
 
       if (dictadosFiltrados.length === 0) {
         contenedor.innerHTML = '<div class="dictado-card"><p>No hay dictados disponibles para este filtro.</p></div>';
@@ -238,8 +232,7 @@
           Tu navegador no soporta el reproductor de audio.
         </audio>
         <div>
-          <button class="action-btn btn-show" onclick="mostrarProgresion(${dictado.id})">Ver progresión</button>
-          <button class="action-btn btn-hide" onclick="ocultarProgresion(${dictado.id})">Ocultar</button>
+          <button id="btnToggle" class="toggle-btn" onclick="toggleProgresion(${dictado.id})">Ver progresión</button>
         </div>
         <div class="feedback" id="feedback${dictado.id}">Presioná "Ver progresión" para la respuesta</div>
       `;
@@ -248,13 +241,22 @@
       document.getElementById('contador').textContent = `${i + 1} / ${dictadosFiltrados.length}`;
     }
 
-    function mostrarProgresion(id) {
+    function toggleProgresion(id) {
       const dictado = todosLosDictados.find(d => d.id === id);
-      document.getElementById('feedback' + id).textContent = 'Progresión: ' + dictado.progresion.join(', ');
-    }
+      const feedback = document.getElementById('feedback' + id);
+      const btn = document.getElementById('btnToggle');
 
-    function ocultarProgresion(id) {
-      document.getElementById('feedback' + id).textContent = 'Presioná "Ver progresión" para la respuesta';
+      progresionVisible = !progresionVisible;
+
+      if (progresionVisible) {
+        feedback.textContent = 'Progresión: ' + dictado.progresion.join(', ');
+        btn.textContent = 'Ocultar progresión';
+        btn.classList.add('oculto');
+      } else {
+        feedback.textContent = 'Presioná "Ver progresión" para la respuesta';
+        btn.textContent = 'Ver progresión';
+        btn.classList.remove('oculto');
+      }
     }
 
     document.getElementById('anterior').addEventListener('click', () => {
