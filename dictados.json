@@ -2,97 +2,103 @@
   {
     "id": 1,
     "titulo": "Dictado D1",
-    "audio": "https://www.dropbox.com/scl/fi/9v065lh9g1ul9tagym9ts/D1-G-MM-I-IV-I-IV-VIm7-IV-VIm7-IV-IIm7-V7-I.mp3?rlkey=okiniehkigsov99hgknls9kw9&st=fbj5avqf&raw=1",
+    "audio_url": "https://www.dropbox.com/scl/fi/9v065lh9g1ul9tagym9ts/D1-G-MM-I-IV-I-IV-VIm7-IV-VIm7-IV-IIm7-V7-I.mp3?rlkey=okiniehkigsov99hgknls9kw9&st=fbj5avqf&raw=1",
     "progresion": ["D1 G MM I IV I IV VIm7 IV VIm7 IV IIm7 V7 I "]
   },
   {
     "id": 2,
     "titulo": "Dictado D2",
-    "audio": "https://www.dropbox.com/scl/fi/sg1972sbbxflg1jcp8vbs/D2-P-MM-Imaj7-VIm7-IIm7-IV-V7-Imaj7.mp3?rlkey=s60pp1izgfdvsxz77a9g666lw&st=18859rrw&raw=1",
+    "audio_url": "https://www.dropbox.com/scl/fi/sg1972sbbxflg1jcp8vbs/D2-P-MM-Imaj7-VIm7-IIm7-IV-V7-Imaj7.mp3?rlkey=s60pp1izgfdvsxz77a9g666lw&st=18859rrw&raw=1",
     "progresion": ["D2 P MM Imaj7 VIm7 IIm7 IV V7"]
   },
   {
     "id": 3,
     "titulo": "Dictado D3",
-    "audio": "https://www.dropbox.com/scl/fi/gumevu8ziwy1jn9s47prx/D3-MM-guitarra-triada-I-IIIm-VIm-IIm-V.mp3?rlkey=2lt9z5qfn81t9znqi7wpyou9m&st=0aqnsbnu&raw=1",
+    "audio_url": "https://www.dropbox.com/scl/fi/gumevu8ziwy1jn9s47prx/D3-MM-guitarra-triada-I-IIIm-VIm-IIm-V.mp3?rlkey=2lt9z5qfn81t9znqi7wpyou9m&st=0aqnsbnu&raw=1",
     "progresion": ["I IIIm VIm IIm V"]
   },
   {
-  "id": 4,
-  "titulo": "Dictado D4",
-  "audio": "https://www.dropbox.com/scl/fi/fpzthq921at8r4efh75li/D4-Imaj-7-VIm7-V7-Imaj7-VIm7-IIIm7-IIm7-V7-guitarra.mp3?rlkey=83j3l6ag612q8a7joze2qufxe&st=earhcaxx&raw=1",
-  "progresion": ["Imaj 7 VIm7 V7 Imaj7 VIm7 IIIm7 IIm7 V7"]
+    "id": 4,
+    "titulo": "Dictado D4",
+    "audio_url": "https://www.dropbox.com/scl/fi/fpzthq921at8r4efh75li/D4-Imaj-7-VIm7-V7-Imaj7-VIm7-IIIm7-IIm7-V7-guitarra.mp3?rlkey=83j3l6ag612q8a7joze2qufxe&st=earhcaxx&raw=1",
+    "progresion": ["Imaj 7 VIm7 V7 Imaj7 VIm7 IIIm7 IIm7 V7"]
   },
   {
-  "id": 5,
-  "titulo": "Dictado D5",
-  "audio": "https://www.dropbox.com/scl/fi/p9j8loq8zqqxp3niit2a7/D5-G-MM-I-IIIm7-IIm7-IVmaj7-V.mp3?rlkey=q0denv1964bck9v4q81whupnp&st=cut08lck&raw=1",
-  "progresion": ["MM I IIIm7 IIm7 IVmaj7 V"]
+    "id": 5,
+    "titulo": "Dictado D5",
+    "audio_url": "https://www.dropbox.com/scl/fi/p9j8loq8zqqxp3niit2a7/D5-G-MM-I-IIIm7-IIm7-IVmaj7-V.mp3?rlkey=q0denv1964bck9v4q81whupnp&st=cut08lck&raw=1",
+    "progresion": ["MM I IIIm7 IIm7 IVmaj7 V"]
   },
   {
-  "id": 6,
-  "titulo": "Dictado D6",
-  "audio": "https://www.dropbox.com/scl/fi/z9zt6c5tw81egjcvyu1j8/D6-G-Mm-Im-IIdim-V-Im-IVm-VII-III-V-Im.mp3?rlkey=sjukg891buv16asgka2uksuuv&st=fel8dmpo&raw=1",
-  "progresion": ["Mm Im IIdim V Im IVm VII III V Im"]
+    "id": 6,
+    "titulo": "Dictado D6",
+    "audio_url": "https://www.dropbox.com/scl/fi/z9zt6c5tw81egjcvyu1j8/D6-G-Mm-Im-IIdim-V-Im-IVm-VII-III-V-Im.mp3?rlkey=sjukg891buv16asgka2uksuuv&st=fel8dmpo&raw=1",
+    "progresion": ["Mm Im IIdim V Im IVm VII III V Im"]
   },
   {
-  "id": 7,
-  "titulo": "Dictado D7",
-  "audio": "https://www.dropbox.com/scl/fi/f874gblep3vs83yk33ekz/D7-P-Mm-Im-VII-VI-IIm7b5-V7-Im.mp3?rlkey=lp5zzaz86c0x125k6ki4e7qhs&st=9yg9ra0l&raw=1",
-  "progresion": ["Mm Im VII VI IIm7b5 V7 Im"]
+    "id": 7,
+    "titulo": "Dictado D7",
+    "audio_url": "https://www.dropbox.com/scl/fi/f874gblep3vs83yk33ekz/D7-P-Mm-Im-VII-VI-IIm7b5-V7-Im.mp3?rlkey=lp5zzaz86c0x125k6ki4e7qhs&st=9yg9ra0l&raw=1",
+    "progresion": ["Mm Im VII VI IIm7b5 V7 Im"]
   },
   {
-  "id": 8,
-  "titulo": "Dictado D8",
-  "audio": "https://www.dropbox.com/scl/fi/d427lmsr6hzismj095qa5/D8-P-Im7-Vm7-IVm7-IIm7b5-V7.mp3?rlkey=w90pyz291nr5dxdp4ayy4zc12&st=fv63hkc6&raw=1",
-  "progresion": ["Mm Im7 Vm7 IVm7 IIm7b5 V7"]
+    "id": 8,
+    "titulo": "Dictado D8",
+    "audio_url": "https://www.dropbox.com/scl/fi/d427lmsr6hzismj095qa5/D8-P-Im7-Vm7-IVm7-IIm7b5-V7.mp3?rlkey=w90pyz291nr5dxdp4ayy4zc12&st=fv63hkc6&raw=1",
+    "progresion": ["Mm Im7 Vm7 IVm7 IIm7b5 V7"]
   },
   {
-  "id": 9,
-  "titulo": "Dictado D9",
-  "audio": "https://www.dropbox.com/scl/fi/y6elco3742nvyd32f6f41/D9-P-Mm-Im7-VImaj7-Im7-VImaj7-IVm7-VII7-Im7.mp3?rlkey=y2kv11hgzbxctss6y9tofdg9l&st=tjv8x2s3&raw=1",
-  "progresion": ["Im7 VImaj7  Im7  VImaj7 IVm7 VII7 Im7"]
+    "id": 9,
+    "titulo": "Dictado D9",
+    "audio_url": "https://www.dropbox.com/scl/fi/y6elco3742nvyd32f6f41/D9-P-Mm-Im7-VImaj7-Im7-VImaj7-IVm7-VII7-Im7.mp3?rlkey=y2kv11hgzbxctss6y9tofdg9l&st=tjv8x2s3&raw=1",
+    "progresion": ["Im7 VImaj7  Im7  VImaj7 IVm7 VII7 Im7"]
   },
   {
-  "id": 10,
-  "titulo": "Dictado D10",
-  "audio": "https://www.dropbox.com/scl/fi/eksf845mzrmrpto5lhr9f/D10-P-Mm-Im-IVm-VI-V-Im-IVm-VI-V-VI-VII-Im.mp3?rlkey=7p7kznj9sqrgh1u5cab53u4h3&st=zsfosaxc&raw=1",
-  "progresion": ["Im IVm VI V Im IVm VI V VI VII Im"]
+    "id": 10,
+    "titulo": "Dictado D10",
+    "audio_url": "https://www.dropbox.com/scl/fi/eksf845mzrmrpto5lhr9f/D10-P-Mm-Im-IVm-VI-V-Im-IVm-VI-V-VI-VII-Im.mp3?rlkey=7p7kznj9sqrgh1u5cab53u4h3&st=zsfosaxc&raw=1",
+    "progresion": ["Im IVm VI V Im IVm VI V VI VII Im"]
   },
   {
-  "id": 11,
-  "titulo": "Dictado D11",
-  "audio": "https://www.dropbox.com/scl/fi/1hyh93690ej0wb0z2n0ou/D11-Mm-Im7-IIdim-IIImaj7-IVm-VImaj7-VIIdim-menor-armonica.mp3?rlkey=1426jnx3hct5rx6n7uhfdklnn&st=f4gn51qz&raw=1",
-  "progresion": ["Im7 IIdim IIImaj7 IVm VImaj7 VIIdim (menor armonica)"]
+    "id": 11,
+    "titulo": "Dictado D11",
+    "audio_url": "https://www.dropbox.com/scl/fi/1hyh93690ej0wb0z2n0ou/D11-Mm-Im7-IIdim-IIImaj7-IVm-VImaj7-VIIdim-menor-armonica.mp3?rlkey=1426jnx3hct5rx6n7uhfdklnn&st=f4gn51qz&raw=1",
+    "progresion": ["Im7 IIdim IIImaj7 IVm VImaj7 VIIdim (menor armonica)"]
   },
   {
-  "id": 12,
-  "titulo": "Dictado D12",
-  "audio": "https://www.dropbox.com/scl/fi/2w7o8esw6bsk0b5bloatv/D12-MM-I-IIIm7-IIm7-IVmaj7-V-I.mp3?rlkey=z0r2nl5tre5285ugfe74z5lpq&st=mcio1jpf&raw=1",
-  "progresion": ["D12-MM-I-IIIm7-IIm7-IVmaj7-V-I"]
-},
-{
-  "id": 13,
-  "titulo": "Dictado D13",
-  "audio": "https://www.dropbox.com/scl/fi/cn2d7l9ff7icfd1bpzk8a/D13-Mm-Im7-IIImaj7-Im7-VImaj7-Vm-IVm7.mp3?rlkey=4zfh1qevt8tvwwx3h8zi62sv5&st=9l9py4gj&raw=1",
-  "progresion": ["D13-Mm-Im7-IIImaj7-Im7-VImaj7-Vm-IVm7"]
-},
-{
-  "id": 14,
-  "titulo": "Dictado D14",
-  "audio": "https://www.dropbox.com/scl/fi/5xm78al8s2jgt7vg2uhu8/D14-MM-Imaj7-IVmaj7-Imaj7-IVmaj7-V-Vim.mp3?rlkey=o1lm8ic5ckyapk8wnpwk07q50&st=wf47n0x6&raw=1",
-  "progresion": ["D14-MM-Imaj7-IVmaj7-Imaj7-IVmaj7-V-Vim"]
-},
-{
-  "id": 15,
-  "titulo": "Dictado D15",
-  "audio": "https://www.dropbox.com/scl/fi/4dq85lnntf9996czb6tjz/D15-Mm-Im7-IIm7b5-V7-Im7-IVm7-VII7-IIImaj7-V7-Im7.mp3?rlkey=1dwcjdnwmp2zjt0rw50bqpdgt&st=t4v4wtpr&raw=1",
-  "progresion": ["D15-Mm-Im7-IIm7b5-V7-Im7-IVm7-VII7-IIImaj7-V7-Im7"]
-},
-{
-  "id": 16,
-  "titulo": "Dictado D16",
-  "audio": "https://www.dropbox.com/scl/fi/vjl2fw35vxivr80ghy601/D16-Mm-Im7-IVm7-IIImaj7-IIm7b5-V7-Im7.mp3?rlkey=xz9rzxcdy71v094un4zzgbqoa&st=fbnjm3qc&raw=1",
-  "progresion": ["D16-Mm-Im7-IVm7-IIImaj7-IIm7b5-V7-Im7"]
-}
+    "id": 12,
+    "titulo": "Dictado D12",
+    "audio_url": "https://www.dropbox.com/scl/fi/2w7o8esw6bsk0b5bloatv/D12-MM-I-IIIm7-IIm7-IVmaj7-V-I.mp3?rlkey=z0r2nl5tre5285ugfe74z5lpq&st=mcio1jpf&raw=1",
+    "progresion": ["D12-MM-I-IIIm7-IIm7-IVmaj7-V-I"]
+  },
+  {
+    "id": 13,
+    "titulo": "Dictado D13",
+    "audio_url": "https://www.dropbox.com/scl/fi/cn2d7l9ff7icfd1bpzk8a/D13-Mm-Im7-IIImaj7-Im7-VImaj7-Vm-IVm7.mp3?rlkey=4zfh1qevt8tvwwx3h8zi62sv5&st=9l9py4gj&raw=1",
+    "progresion": ["D13-Mm-Im7-IIImaj7-Im7-VImaj7-Vm-IVm7"]
+  },
+  {
+    "id": 14,
+    "titulo": "Dictado D14",
+    "audio_url": "https://www.dropbox.com/scl/fi/5xm78al8s2jgt7vg2uhu8/D14-MM-Imaj7-IVmaj7-Imaj7-IVmaj7-V-Vim.mp3?rlkey=o1lm8ic5ckyapk8wnpwk07q50&st=wf47n0x6&raw=1",
+    "progresion": ["D14-MM-Imaj7-IVmaj7-Imaj7-IVmaj7-V-Vim"]
+  },
+  {
+    "id": 15,
+    "titulo": "Dictado D15",
+    "audio_url": "https://www.dropbox.com/scl/fi/4dq85lnntf9996czb6tjz/D15-Mm-Im7-IIm7b5-V7-Im7-IVm7-VII7-IIImaj7-V7-Im7.mp3?rlkey=1dwcjdnwmp2zjt0rw50bqpdgt&st=t4v4wtpr&raw=1",
+    "progresion": ["D15-Mm-Im7-IIm7b5-V7-Im7-IVm7-VII7-IIImaj7-V7-Im7"]
+  },
+  {
+    "id": 16,
+    "titulo": "Dictado D16",
+    "audio_url": "https://www.dropbox.com/scl/fi/vjl2fw35vxivr80ghy601/D16-Mm-Im7-IVm7-IIImaj7-IIm7b5-V7-Im7.mp3?rlkey=xz9rzxcdy71v094un4zzgbqoa&st=fbnjm3qc&raw=1",
+    "progresion": ["D16-Mm-Im7-IVm7-IIImaj7-IIm7b5-V7-Im7"]
+  },
+  {
+    "id": 17,
+    "titulo": "Dictado D17",
+    "audio_url": "https://www.dropbox.com/scl/fi/snufsw7868lo2flhbshmg/D17-MMguitarra-I-IIm-IV-V7-IIIm-Vim-IV-V7.mp3?rlkey=7s8dcd1c04qzeym9vrf18gaac&st=1amvrq3c&raw=1",
+    "progresion": ["I-IIm-IV-V7-IIIm-Vim-IV-V7"]
+  }
 ]
