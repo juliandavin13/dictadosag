@@ -2,103 +2,145 @@
   {
     "id": 1,
     "titulo": "Dictado D1",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/9v065lh9g1ul9tagym9ts/D1-G-MM-I-IV-I-IV-VIm7-IV-VIm7-IV-IIm7-V7-I.mp3?rlkey=okiniehkigsov99hgknls9kw9",
-    "progresion": ["D1 G MM I IV I IV VIm7 IV VIm7 IV IIm7 V7 I "]
+    "audio_url": "audios/d1.mp3",
+    "progresion": ["G Mayor - I IV I IV VIm7 IV VIm7 IV IIm7 V7 I"]
   },
   {
     "id": 2,
     "titulo": "Dictado D2",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/sg1972sbbxflg1jcp8vbs/D2-P-MM-Imaj7-VIm7-IIm7-IV-V7-Imaj7.mp3?rlkey=s60pp1izgfdvsxz77a9g666lw",
-    "progresion": ["D2 P MM Imaj7 VIm7 IIm7 IV V7"]
+    "audio_url": "audios/d2.mp3",
+    "progresion": ["P Mayor - Imaj7 VIm7 IIm7 IV V7 Imaj7"]
   },
   {
     "id": 3,
     "titulo": "Dictado D3",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/gumevu8ziwy1jn9s47prx/D3-MM-guitarra-triada-I-IIIm-VIm-IIm-V.mp3?rlkey=2lt9z5qfn81t9znqi7wpyou9m",
-    "progresion": ["I IIIm VIm IIm V"]
+    "audio_url": "audios/d3.mp3",
+    "progresion": ["Mayor (Guitarra) - Triadas: I IIIm VIm IIm V"]
   },
   {
     "id": 4,
     "titulo": "Dictado D4",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/fpzthq921at8r4efh75li/D4-Imaj-7-VIm7-V7-Imaj7-VIm7-IIIm7-IIm7-V7-guitarra.mp3?rlkey=83j3l6ag612q8a7joze2qufxe",
-    "progresion": ["Imaj 7 VIm7 V7 Imaj7 VIm7 IIIm7 IIm7 V7"]
+    "audio_url": "audios/d4.mp3",
+    "progresion": ["Guitarra - Imaj7 VIm7 V7 Imaj7 VIm7 IIIm7 IIm7 V7"]
   },
   {
     "id": 5,
     "titulo": "Dictado D5",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/p9j8loq8zqqxp3niit2a7/D5-G-MM-I-IIIm7-IIm7-IVmaj7-V.mp3?rlkey=q0denv1964bck9v4q81whupnp",
-    "progresion": ["MM I IIIm7 IIm7 IVmaj7 V"]
+    "audio_url": "audios/d5.mp3",
+    "progresion": ["G Mayor - I IIIm7 IIm7 IVmaj7 V"]
   },
   {
     "id": 6,
     "titulo": "Dictado D6",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/z9zt6c5tw81egjcvyu1j8/D6-G-Mm-Im-IIdim-V-Im-IVm-VII-III-V-Im.mp3?rlkey=sjukg891buv16asgka2uksuuv",
-    "progresion": ["Mm Im IIdim V Im IVm VII III V Im"]
+    "audio_url": "audios/d6.mp3",
+    "progresion": ["G menor - Im IIdim V Im IVm VII III V Im"]
   },
   {
     "id": 7,
     "titulo": "Dictado D7",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/f874gblep3vs83yk33ekz/D7-P-Mm-Im-VII-VI-IIm7b5-V7-Im.mp3?rlkey=lp5zzaz86c0x125k6ki4e7qhs",
-    "progresion": ["Mm Im VII VI IIm7b5 V7 Im"]
+    "audio_url": "audios/d7.mp3",
+    "progresion": ["P menor - Im VII VI IIm7b5 V7 Im"]
   },
   {
     "id": 8,
     "titulo": "Dictado D8",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/d427lmsr6hzismj095qa5/D8-P-Im7-Vm7-IVm7-IIm7b5-V7.mp3?rlkey=w90pyz291nr5dxdp4ayy4zc12",
-    "progresion": ["Mm Im7 Vm7 IVm7 IIm7b5 V7"]
+    "audio_url": "audios/d8.mp3",
+    "progresion": ["P - Im7 Vm7 IVm7 IIm7b5 V7"]
   },
   {
     "id": 9,
     "titulo": "Dictado D9",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/y6elco3742nvyd32f6f41/D9-P-Mm-Im7-VImaj7-Im7-VImaj7-IVm7-VII7-Im7.mp3?rlkey=y2kv11hgzbxctss6y9tofdg9l",
-    "progresion": ["Im7 VImaj7  Im7  VImaj7 IVm7 VII7 Im7"]
+    "audio_url": "audios/d9.mp3",
+    "progresion": ["P menor - Im7 VImaj7 Im7 VImaj7 IVm7 VII7 Im7"]
   },
   {
     "id": 10,
     "titulo": "Dictado D10",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/eksf845mzrmrpto5lhr9f/D10-P-Mm-Im-IVm-VI-V-Im-IVm-VI-V-VI-VII-Im.mp3?rlkey=7p7kznj9sqrgh1u5cab53u4h3",
-    "progresion": ["Im IVm VI V Im IVm VI V VI VII Im"]
+    "audio_url": "audios/d10.mp3",
+    "progresion": ["P menor - Im IVm VI V Im IVm VI V VI VII Im"]
   },
   {
     "id": 11,
     "titulo": "Dictado D11",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/1hyh93690ej0wb0z2n0ou/D11-Mm-Im7-IIdim-IIImaj7-IVm-VImaj7-VIIdim-menor-armonica.mp3?rlkey=1426jnx3hct5rx6n7uhfdklnn",
-    "progresion": ["Im7 IIdim IIImaj7 IVm VImaj7 VIIdim (menor armonica)"]
+    "audio_url": "audios/d11.mp3",
+    "progresion": ["menor - Im7 IIdim IIImaj7 IVm VImaj7 VIIdim (Menor armónica)"]
   },
   {
     "id": 12,
     "titulo": "Dictado D12",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/2w7o8esw6bsk0b5bloatv/D12-MM-I-IIIm7-IIm7-IVmaj7-V-I.mp3?rlkey=z0r2nl5tre5285ugfe74z5lpq",
-    "progresion": ["D12-MM-I-IIIm7-IIm7-IVmaj7-V-I"]
+    "audio_url": "audios/d12.mp3",
+    "progresion": ["Mayor - I IIIm7 IIm7 IVmaj7 V I"]
   },
   {
     "id": 13,
     "titulo": "Dictado D13",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/cn2d7l9ff7icfd1bpzk8a/D13-Mm-Im7-IIImaj7-Im7-VImaj7-Vm-IVm7.mp3?rlkey=4zfh1qevt8tvwwx3h8zi62sv5",
-    "progresion": ["D13-Mm-Im7-IIImaj7-Im7-VImaj7-Vm-IVm7"]
+    "audio_url": "audios/d13.mp3",
+    "progresion": ["menor - Im7 IIImaj7 Im7 VImaj7 Vm IVm7"]
   },
   {
     "id": 14,
     "titulo": "Dictado D14",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/5xm78al8s2jgt7vg2uhu8/D14-MM-Imaj7-IVmaj7-Imaj7-IVmaj7-V-Vim.mp3?rlkey=o1lm8ic5ckyapk8wnpwk07q50",
-    "progresion": ["D14-MM-Imaj7-IVmaj7-Imaj7-IVmaj7-V-Vim"]
+    "audio_url": "audios/d14.mp3",
+    "progresion": ["Mayor - Imaj7 IVmaj7 Imaj7 IVmaj7 V VIm"]
   },
   {
     "id": 15,
     "titulo": "Dictado D15",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/4dq85lnntf9996czb6tjz/D15-Mm-Im7-IIm7b5-V7-Im7-IVm7-VII7-IIImaj7-V7-Im7.mp3?rlkey=1dwcjdnwmp2zjt0rw50bqpdgt",
-    "progresion": ["D15-Mm-Im7-IIm7b5-V7-Im7-IVm7-VII7-IIImaj7-V7-Im7"]
+    "audio_url": "audios/d15.mp3",
+    "progresion": ["menor - Im7 IIm7b5 V7 Im7 IVm7 VII7 IIImaj7 V7 Im7"]
   },
   {
     "id": 16,
     "titulo": "Dictado D16",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/vjl2fw35vxivr80ghy601/D16-Mm-Im7-IVm7-IIImaj7-IIm7b5-V7-Im7.mp3?rlkey=xz9rzxcdy71v094un4zzgbqoa",
-    "progresion": ["D16-Mm-Im7-IVm7-IIImaj7-IIm7b5-V7-Im7"]
+    "audio_url": "audios/d16.mp3",
+    "progresion": ["menor - Im7 IVm7 IIImaj7 IIm7b5 V7 Im7"]
   },
   {
     "id": 17,
     "titulo": "Dictado D17",
-    "audio_url": "https://dl.dropboxusercontent.com/scl/fi/snufsw7868lo2flhbshmg/D17-MMguitarra-I-IIm-IV-V7-IIIm-Vim-IV-V7.mp3?rlkey=7s8dcd1c04qzeym9vrf18gaac",
-    "progresion": ["I-IIm-IV-V7-IIIm-Vim-IV-V7"]
+    "audio_url": "audios/d17.mp3",
+    "progresion": ["Mayor (Guitarra) - I IIm IV V7 IIIm VIm IV V7"]
+  },
+  {
+    "id": 18,
+    "titulo": "Dictado D18",
+    "audio_url": "audios/d18.mp3",
+    "progresion": ["Menor (Guitarra) - Im VI VII Im Im VI V7 Im"]
+  },
+  {
+    "id": 19,
+    "titulo": "Dictado D19",
+    "audio_url": "audios/d19.mp3",
+    "progresion": ["Menor - Im7 Vm7 IVm7 VIIdim7 Im7 III IIm7b5 V7 Im7 (Aprendizaje - Sui Generis, estrofa)"]
+  },
+  {
+    "id": 20,
+    "titulo": "Dictado D20",
+    "audio_url": "audios/d20.mp3",
+    "progresion": ["Menor (Piano) - Im IVm V Im Im VI IIdim V Im"]
+  },
+  {
+    "id": 21,
+    "titulo": "Dictado D21",
+    "audio_url": "audios/d21.mp3",
+    "progresion": ["Modo Mayor - I IIIm IV V7 IV V7 VIm IV (Mariposa Technicolor)"]
+  },
+  {
+    "id": 22,
+    "titulo": "Dictado D22",
+    "audio_url": "audios/d22.mp3",
+    "progresion": ["Modo Mayor - I IV I I IIm IV IIIm VIm IIm V7 I"]
+  },
+  {
+    "id": 23,
+    "titulo": "Dictado D23",
+    "audio_url": "audios/d23.mp3",
+    "progresion": ["Modo Mayor - I V V7 I IVmaj7 I V7 I (Hey Jude)"]
+  },
+  {
+    "id": 24,
+    "titulo": "Dictado D24",
+    "audio_url": "audios/d24.mp3",
+    "progresion": ["Modo Mayor - Imaj7 IVmaj7 Imaj7 IVmaj7 VIm IIm V7 V7 (Aprendizaje - Sui Generis, estrofa)"]
   }
 ]
