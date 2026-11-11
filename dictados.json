@@ -2,145 +2,145 @@
   {
     "id": 1,
     "titulo": "Dictado D1",
-    "audio_url": "audios/d1.mp3",
+    "audio_url": "d1.mp3",
     "progresion": ["G Mayor - I IV I IV VIm7 IV VIm7 IV IIm7 V7 I"]
   },
   {
     "id": 2,
     "titulo": "Dictado D2",
-    "audio_url": "audios/d2.mp3",
+    "audio_url": "d2.mp3",
     "progresion": ["P Mayor - Imaj7 VIm7 IIm7 IV V7 Imaj7"]
   },
   {
     "id": 3,
     "titulo": "Dictado D3",
-    "audio_url": "audios/d3.mp3",
+    "audio_url": "d3.mp3",
     "progresion": ["Mayor (Guitarra) - Triadas: I IIIm VIm IIm V"]
   },
   {
     "id": 4,
     "titulo": "Dictado D4",
-    "audio_url": "audios/d4.mp3",
+    "audio_url": "d4.mp3",
     "progresion": ["Guitarra - Imaj7 VIm7 V7 Imaj7 VIm7 IIIm7 IIm7 V7"]
   },
   {
     "id": 5,
     "titulo": "Dictado D5",
-    "audio_url": "audios/d5.mp3",
+    "audio_url": "d5.mp3",
     "progresion": ["G Mayor - I IIIm7 IIm7 IVmaj7 V"]
   },
   {
     "id": 6,
     "titulo": "Dictado D6",
-    "audio_url": "audios/d6.mp3",
+    "audio_url": "d6.mp3",
     "progresion": ["G menor - Im IIdim V Im IVm VII III V Im"]
   },
   {
     "id": 7,
     "titulo": "Dictado D7",
-    "audio_url": "audios/d7.mp3",
+    "audio_url": "d7.mp3",
     "progresion": ["P menor - Im VII VI IIm7b5 V7 Im"]
   },
   {
     "id": 8,
     "titulo": "Dictado D8",
-    "audio_url": "audios/d8.mp3",
+    "audio_url": "d8.mp3",
     "progresion": ["P - Im7 Vm7 IVm7 IIm7b5 V7"]
   },
   {
     "id": 9,
     "titulo": "Dictado D9",
-    "audio_url": "audios/d9.mp3",
+    "audio_url": "d9.mp3",
     "progresion": ["P menor - Im7 VImaj7 Im7 VImaj7 IVm7 VII7 Im7"]
   },
   {
     "id": 10,
     "titulo": "Dictado D10",
-    "audio_url": "audios/d10.mp3",
+    "audio_url": "d10.mp3",
     "progresion": ["P menor - Im IVm VI V Im IVm VI V VI VII Im"]
   },
   {
     "id": 11,
     "titulo": "Dictado D11",
-    "audio_url": "audios/d11.mp3",
+    "audio_url": "d11.mp3",
     "progresion": ["menor - Im7 IIdim IIImaj7 IVm VImaj7 VIIdim (Menor armónica)"]
   },
   {
     "id": 12,
     "titulo": "Dictado D12",
-    "audio_url": "audios/d12.mp3",
+    "audio_url": "d12.mp3",
     "progresion": ["Mayor - I IIIm7 IIm7 IVmaj7 V I"]
   },
   {
     "id": 13,
     "titulo": "Dictado D13",
-    "audio_url": "audios/d13.mp3",
+    "audio_url": "d13.mp3",
     "progresion": ["menor - Im7 IIImaj7 Im7 VImaj7 Vm IVm7"]
   },
   {
     "id": 14,
     "titulo": "Dictado D14",
-    "audio_url": "audios/d14.mp3",
+    "audio_url": "d14.mp3",
     "progresion": ["Mayor - Imaj7 IVmaj7 Imaj7 IVmaj7 V VIm"]
   },
   {
     "id": 15,
     "titulo": "Dictado D15",
-    "audio_url": "audios/d15.mp3",
+    "audio_url": "d15.mp3",
     "progresion": ["menor - Im7 IIm7b5 V7 Im7 IVm7 VII7 IIImaj7 V7 Im7"]
   },
   {
     "id": 16,
     "titulo": "Dictado D16",
-    "audio_url": "audios/d16.mp3",
+    "audio_url": "d16.mp3",
     "progresion": ["menor - Im7 IVm7 IIImaj7 IIm7b5 V7 Im7"]
   },
   {
     "id": 17,
     "titulo": "Dictado D17",
-    "audio_url": "audios/d17.mp3",
+    "audio_url": "d17.mp3",
     "progresion": ["Mayor (Guitarra) - I IIm IV V7 IIIm VIm IV V7"]
   },
   {
     "id": 18,
     "titulo": "Dictado D18",
-    "audio_url": "audios/d18.mp3",
+    "audio_url": "d18.mp3",
     "progresion": ["Menor (Guitarra) - Im VI VII Im Im VI V7 Im"]
   },
   {
     "id": 19,
     "titulo": "Dictado D19",
-    "audio_url": "audios/d19.mp3",
+    "audio_url": "d19.mp3",
     "progresion": ["Menor - Im7 Vm7 IVm7 VIIdim7 Im7 III IIm7b5 V7 Im7 (Aprendizaje - Sui Generis, estrofa)"]
   },
   {
     "id": 20,
     "titulo": "Dictado D20",
-    "audio_url": "audios/d20.mp3",
+    "audio_url": "d20.mp3",
     "progresion": ["Menor (Piano) - Im IVm V Im Im VI IIdim V Im"]
   },
   {
     "id": 21,
     "titulo": "Dictado D21",
-    "audio_url": "audios/d21.mp3",
+    "audio_url": "d21.mp3",
     "progresion": ["Modo Mayor - I IIIm IV V7 IV V7 VIm IV (Mariposa Technicolor)"]
   },
   {
     "id": 22,
     "titulo": "Dictado D22",
-    "audio_url": "audios/d22.mp3",
+    "audio_url": "d22.mp3",
     "progresion": ["Modo Mayor - I IV I I IIm IV IIIm VIm IIm V7 I"]
   },
   {
     "id": 23,
     "titulo": "Dictado D23",
-    "audio_url": "audios/d23.mp3",
+    "audio_url": "d23.mp3",
     "progresion": ["Modo Mayor - I V V7 I IVmaj7 I V7 I (Hey Jude)"]
   },
   {
     "id": 24,
     "titulo": "Dictado D24",
-    "audio_url": "audios/d24.mp3",
+    "audio_url": "d24.mp3",
     "progresion": ["Modo Mayor - Imaj7 IVmaj7 Imaj7 IVmaj7 VIm IIm V7 V7 (Aprendizaje - Sui Generis, estrofa)"]
   }
 ]
